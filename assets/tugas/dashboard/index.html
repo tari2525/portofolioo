@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dashboard with Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Tambahkan CDN untuk Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Blog Dashboard</h2>
+            <ul class="sidebar-menu">
+                <li><a href="#"><i class="fas fa-edit"></i> Post</a></li>
+                <li><a href="#"><i class="fas fa-file"></i> Pages</a></li>
+                <li><a href="#"><i class="fas fa-comments"></i> Comments</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Stats</a></li>
+                <li><a href="#"><i class="fas fa-dollar-sign"></i> Earning</a></li>
+                <li><a href="#"><i class="fas fa-th-large"></i> Layout</a></li>
+                <li><a href="#"><i class="fas fa-paint-brush"></i> Template</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Welcome to Your Blog Dashboard</h1>
+            <p>Select a menu from the sidebar to manage your blog.</p>
+            
+            <!-- Example Content -->
+            <div class="stats">
+                <div class="card">
+                    <h3><i class="fas fa-edit"></i> Posts</h3>
+                    <p>120</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-comments"></i> Comments</h3>
+                    <p>342</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-eye"></i> Views</h3>
+                    <p>15,892</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-dollar-sign"></i> Earnings</h3>
+                    <p>$1,234</p>
+                </div>
+            </div>
+
+            <!-- Section for Charts -->
+            <h2>Blog Statistics</h2>
+            <!-- Canvas for Line Chart -->
+            <canvas id="lineChart" width="400" height="200"></canvas>
+
+            <!-- Canvas for Bar Chart -->
+            <canvas id="barChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
